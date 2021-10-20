@@ -109,7 +109,7 @@
                 <ul class="nav__list">
                     <li class="list__item"><a href="" class="btn">Introduzione</a></li>
                     <li class="list__item"><a href="" class="btn">Norme sulla privacy</a></li>
-                    <li class="list__item"><a href="" class="btn">Norme sulla privacy</a></li>
+                    <li class="list__item"><a href="" class="btn">Termini del servizio</a></li>
                     <li class="list__item"><a href="" class="btn">Tecnologie</a></li>
                     <li class="list__item"><a href="" class="btn active">Domande frequenti</a></li>
                 </ul>

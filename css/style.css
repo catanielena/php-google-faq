@@ -11,11 +11,11 @@
     --grey-300: #5f6469;
     --grey-500: #cccbcb;
     --grey-800: #f3f4f3;
-    --sectionmargin: 6rem;
+    --sectionmargin: 5rem;
     --gutter-xs: .7rem;
     --gutter-sm: 1.2rem;
     --gutter: 2rem;
-    --gutter-md: 3rem;
+    --gutter-md: 2.5rem;
     --purple: #7b1fa2;
 }
 /* font */
@@ -51,7 +51,7 @@ h3 {
 }
 /* common */
 .container {
-    max-width: 56.25rem;
+    max-width: 65rem;
     padding: 0 var(--gutter-sm);
     margin: auto;
 }
@@ -103,7 +103,10 @@ a svg {
 
 /* header */
 header {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
     color: var(--grey-300);
     padding: var(--gutter-sm) var(--gutter-sm) 0 var(--gutter-sm);
 }
@@ -131,6 +134,7 @@ header h2 {
 
 .header__top {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .top__logo {
@@ -157,12 +161,14 @@ header h2 {
     font-weight: 600;
     font-size: .9rem;
     margin-right: var(--gutter-md);
-    padding: var(--gutter-xs) 0 ;
+    padding-bottom: var(--gutter-xs);
 }
+
 .nav__list a.active {
     color: var(--blue);
     position: relative;
 }
+
 .nav__list a.active::after {
     content: '';
     position: absolute;
@@ -174,8 +180,11 @@ header h2 {
     background-color: var(--blue);
 }
 /* main */
+main {
+    padding-top: 6.525rem;
+}
 .faq {
-    margin: var(--sectionmargin) 0;
+    margin: var(--sectionmargin) 0 var(--sectionmargin);
 }
 .faq__paragraph {
     margin: var(--gutter) 0;
