@@ -1,0 +1,31 @@
+/* reset */
+*:not(ol) {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* buttons */
+/* common */
+.container {
+    width: 80%;
+}
+
+.list--lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+a {
+    display: inline-block;
+}
+
+a svg {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+/* header */
+/* footer */
