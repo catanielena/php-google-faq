@@ -75,17 +75,52 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <!-- /Open-Sans_GoogleFont -->
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- 7font-awesome -->
         <link rel="stylesheet" href="css/style.css">
         <title>Google Faq</title>
     </head>
     <body>
-        <header></header>
+        <header>
+            <div class="header__top">
+                <div class="top__logo">
+                    <img src="img/googlelogo_clr_74x24px.svg" alt="google-logo">
+                    <h2>Privacy e termini</h2>
+                </div>
+                <div class="top__user">
+                    <a href="#" class="btn circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.05 249.05">
+                        <circle class="cls-1" cx="213.02" cy="218.02" r="31.02"/>
+                        <circle class="cls-1" cx="31.02" cy="218.02" r="31.02"/>
+                        <circle class="cls-1" cx="122.02" cy="218.02" r="31.02"/>
+                        <circle class="cls-1" cx="213.02" cy="122.02" r="31.02"/>
+                        <circle class="cls-1" cx="31.02" cy="122.02" r="31.02"/>
+                        <circle class="cls-1" cx="122.02" cy="122.02" r="31.02"/>
+                        <circle class="cls-1" cx="213.02" cy="31.02" r="31.02"/>
+                        <circle class="cls-1" cx="31.02" cy="31.02" r="31.02"/>
+                        <circle class="cls-1" cx="122.02" cy="31.02" r="31.02"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn circle btn--user">E</a>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav__list">
+                    <li class="list__item"><a href="" class="btn">Introduzione</a></li>
+                    <li class="list__item"><a href="" class="btn">Norme sulla privacy</a></li>
+                    <li class="list__item"><a href="" class="btn">Norme sulla privacy</a></li>
+                    <li class="list__item"><a href="" class="btn">Tecnologie</a></li>
+                    <li class="list__item"><a href="" class="btn active">Domande frequenti</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <div class="container">
                 <?php foreach($db as $faq) { ?>
                     <!-- faq -->
                     <section class="faq">
-                        <h2 class="faq__title"><?= $faq["question"] ?></h2>
+                        <h3 class="faq__title"><?= $faq["question"] ?></h3>
 
                         <?php foreach($faq["answer"] as $answer) { ?>
                             <p class="faq__paragraph"><?= $answer ?></p>
