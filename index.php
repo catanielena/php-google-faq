@@ -81,7 +81,26 @@
     <body>
         <header></header>
         <main>
-            <div class="container">  
+            <div class="container">
+                <?php foreach($db as $faq) { ?>
+                    <!-- faq -->
+                    <section class="faq">
+                        <h2 class="faq__title"><?= $faq["question"] ?></h2>
+
+                        <?php foreach($faq["answer"] as $answer) { ?>
+                            <p class="faq__paragraph"><?= $answer ?></p>
+                        <?php }; ?>
+
+                        <?php if(array_key_exists("deepening", $faq)) {?>
+                            <h3><?= $faq["deepening"] ?></h4>
+                            <?php foreach($faq["deepeningAnswer"] as $answer) { ?>
+                                <p class="faq__paragraph"><?= $answer ?></p>
+                            <?php }; ?>
+
+                        <?php }; ?>
+                    </section>
+                    <!-- /faq -->
+                <?php }; ?>
             </div>
         </main>
         <footer></footer>
