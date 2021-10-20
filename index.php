@@ -138,6 +138,21 @@
                 <?php }; ?>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="container">
+                <ul class="footer__list">
+                    <li class="list__item"><a href="#">Google</a></li>
+                    <li class="list__item"><a href="#">Tutto su Google</a></li>
+                    <li class="list__item"><a href="#">Privacy</a></li>
+                    <li class="list__item"><a href="#">Termini</a></li>
+                </ul>
+                <div class="footer__languages">
+                    <a href="#" class="btn"><img src="img/languages-icon.png" alt="languages-icon"></a>
+                    <select name="languages" id="">
+                        <option value="italian">Italiano</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -191,3 +191,37 @@ main {
     line-height: 1.5rem;
 }
 /* footer */
+footer {
+    background-color: var(--grey-800);
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+}
+.footer__list, .footer__languages {
+    display: flex;
+    align-items: center;
+}
+.footer__list a {
+    color: var(--grey-300);
+    margin: 0 var(--gutter-xs);
+    font-size: .7rem;
+}
+.list__item {
+    position: relative;
+}
+.list__item:not(:last-child)::after {
+    content: '.';
+    position: absolute;
+    display: inline-block;
+    font-size: .7rem;
+}
+.footer__languages a img {
+    height: 1.2rem;
+    margin: 0 var(--gutter-xs);
+    margin-top: .3rem;
+}
+select {
+    width: 10rem;
+}
